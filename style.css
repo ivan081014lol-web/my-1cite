@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: "Science Gothic", Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, rgb(41, 119, 182) ,rgb(255, 255, 255), rgb(41, 119, 182));
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Science Gothic", Arial, Helvetica, sans-serif; 
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.hew {
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    text-shadow: 
+        0 0 5px blue,
+        0 0 10px blue,
+        0 0 20px blue;
+    margin: 20px 0;
+    animation: neonPulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes neonPulse {
+    from {
+        text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 20px blue;
+    }
+    to {
+        text-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 60px blue, 0 0 80px blue;
+    }
+}
+
+.but1, .but2 {
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin: 20px 0;
+    left: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.but1:hover, .but2:hover {
+    transform: scale(1.1);
+    border-width: (blue 50px);
+    box-shadow: 0 0 20px white;
+}
+
